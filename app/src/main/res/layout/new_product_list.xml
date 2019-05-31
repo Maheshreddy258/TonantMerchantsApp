@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/_127sdp"
+            android:layout_height="116dp"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="@dimen/_57sdp"
+                android:layout_height="88dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_launcher" />
+
+
+            <TextView
+                android:id="@+id/ProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="Chilli Powder"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:text=" MRP :140RS/kg"
+                android:layout_weight="1"
+                android:textColor="#6f6f6f" />
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/gms"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="GM (100)"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:layout_marginStart="@dimen/_8sdp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/inc_second_ract"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linear_green"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/value_inc_dec_ract"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/decrement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="19.5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="-"
+                                android:paddingBottom="2dp"
+                                android:paddingTop="4dp"
+                                android:textColor="@color/white"
+                                android:textSize="19.7sp" />
+
+                            <TextView
+                                android:id="@+id/display_inc_dec"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="29dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="16.3sp" />
+
+
+                            <TextView
+                                android:id="@+id/increment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:paddingLeft="29.3dp"
+                                android:paddingTop="4dp"
+                                android:paddingRight="20dp"
+                                android:paddingBottom="2dp"
+                                android:text="+"
+                                android:textColor="@color/white"
+                                android:textSize="19.7sp" />
+
+
+                        </LinearLayout>
+
+                      <!--  <LinearLayout
+                            android:id="@+id/down_view_linear"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/price100glay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="40Rs"
+                                android:textColor="@color/green"
+                                android:textSize="12.3sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text=" | 1Kg"
+                                android:textColor="@color/black"
+                                android:textSize="12.3sp" />
+
+
+                        </LinearLayout>-->
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/rs_linear1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/rs_ract"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/price100g"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:paddingBottom="6dp"
+                            android:paddingLeft="7.4dp"
+                            android:paddingTop="6dp"
+                            android:text="10RS "
+                            android:textColor="@color/green"
+                            android:textSize="12.3sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:paddingBottom="6dp"
+                            android:paddingLeft="7.4dp"
+                            android:paddingTop="6dp"
+                            android:text="|  100g"
+                            android:textColor="@color/black"
+                            android:textSize="12.3sp" />
+
+
+                        <TextView
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8.3dp"
+                            android:background="#dbdbdb"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="1dp"
+                            android:text="+"
+                            android:textColor="#80000000"
+                            android:textSize="19.7sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <!--<RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/inc_second_ract"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linear_green2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/value_inc_dec_ract"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/decrement2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="19.5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="-"
+                                android:paddingBottom="2dp"
+                                android:paddingTop="4dp"
+                                android:textColor="@color/white"
+                                android:textSize="19.7sp" />
+
+                            <TextView
+                                android:id="@+id/display_inc_dec2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="29dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="1"
+                                android:textColor="@color/white"
+                                android:textSize="16.3sp" />
+
+
+                            <TextView
+                                android:id="@+id/increment2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="29.3dp"
+                                android:paddingRight="12dp"
+                                android:paddingBottom="2dp"
+                                android:paddingTop="4dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="+"
+                                android:textColor="@color/white"
+                                android:textSize="19.7sp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/down_view_linear2"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/price200glay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="40Rs"
+                                android:textColor="@color/green"
+                                android:textSize="12.3sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text=" | 1Kg"
+                                android:textColor="@color/black"
+                                android:textSize="12.3sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                   &lt;!&ndash; <LinearLayout
+                        android:id="@+id/rs_linear2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/rs_ract"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/price200g"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:paddingBottom="6dp"
+                            android:paddingLeft="7.4dp"
+                            android:paddingTop="6dp"
+                            android:text="40RS "
+                            android:textColor="@color/green"
+                            android:textSize="12.3sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:paddingBottom="6dp"
+                            android:paddingLeft="7.4dp"
+                            android:paddingTop="6dp"
+                            android:text="|  200g"
+                            android:textColor="@color/black"
+                            android:textSize="12.3sp" />
+
+
+                        <TextView
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8.3dp"
+                            android:background="#dbdbdb"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="1dp"
+                            android:text="+"
+                            android:textColor="#80000000"
+                            android:textSize="19.7sp" />
+
+                    </LinearLayout>&ndash;&gt;
+
+
+                </RelativeLayout>-->
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/kgs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="left"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="0.5"
+                    android:text="KG"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/inc_second_ract"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linear_green3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/value_inc_dec_ract"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/decrement3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="19.5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="-"
+                                android:paddingBottom="2dp"
+                                android:paddingTop="4dp"
+                                android:textColor="@color/white"
+                                android:textSize="19.7sp" />
+
+                            <TextView
+                                android:id="@+id/display_inc_dec3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="29dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="16.3sp" />
+
+
+                            <TextView
+                                android:id="@+id/increment3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="29.3dp"
+                                android:paddingRight="20dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="+"
+                                android:paddingBottom="2dp"
+                                android:paddingTop="4dp"
+                                android:textColor="@color/white"
+                                android:textSize="19.7sp" />
+
+
+                        </LinearLayout>
+
+                      <!--  <LinearLayout
+                            android:id="@+id/down_view_linear3"
+                            android:visibility="visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/price1kglay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="40Rs"
+                                android:textColor="@color/green"
+                                android:textSize="12.3sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text=" | 1Kg"
+                                android:textColor="@color/black"
+                                android:textSize="12.3sp" />
+
+
+                        </LinearLayout>-->
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/rs_linear3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/rs_ract"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/price1kg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:paddingBottom="6dp"
+                            android:paddingLeft="7.4dp"
+                            android:paddingTop="6dp"
+                            android:text="10RS "
+                            android:textColor="@color/green"
+                            android:textSize="12.3sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:paddingBottom="6dp"
+                            android:paddingLeft="7.4dp"
+                            android:paddingTop="6dp"
+                            android:text="|  1kg"
+                            android:textColor="@color/black"
+                            android:textSize="12.3sp" />
+
+
+                        <TextView
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8.3dp"
+                            android:background="#dbdbdb"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="1dp"
+                            android:text="+"
+                            android:textColor="#80000000"
+                            android:textSize="19.7sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+               <!-- <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/inc_second_ract"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linear_green4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/value_inc_dec_ract"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/decrement4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="19.5dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="-"
+                                android:paddingBottom="2dp"
+                                android:paddingTop="4dp"
+                                android:textColor="@color/white"
+                                android:textSize="19.7sp" />
+
+                            <TextView
+                                android:id="@+id/display_inc_dec4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="29dp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="1"
+                                android:textColor="@color/white"
+                                android:textSize="16.3sp" />
+
+
+                            <TextView
+                                android:id="@+id/increment4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="29.3dp"
+                                android:paddingRight="12dp"
+                                android:paddingBottom="2dp"
+                                android:paddingTop="4dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="+"
+                                android:textColor="@color/white"
+                                android:textSize="19.7sp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/down_view_linear4"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/price2kglay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="40Rs"
+                                android:textColor="@color/green"
+                                android:textSize="12.3sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text=" | 1Kg"
+                                android:textColor="@color/black"
+                                android:textSize="12.3sp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rs_linear4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/rs_ract"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/price2kg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:paddingBottom="6dp"
+                            android:paddingLeft="7.4dp"
+                            android:paddingTop="6dp"
+                            android:text="40RS "
+                            android:textColor="@color/green"
+                            android:textSize="12.3sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:paddingBottom="6dp"
+                            android:paddingLeft="7.4dp"
+                            android:paddingTop="6dp"
+                            android:text="|  2kg"
+                            android:textColor="@color/black"
+                            android:textSize="12.3sp" />
+
+
+                        <TextView
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8.3dp"
+                            android:background="#dbdbdb"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="1dp"
+                            android:text="+"
+                            android:textColor="#80000000"
+                            android:textSize="19.7sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>-->
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:background="#c0c0c0" />
+
+
+</RelativeLayout>
+
+

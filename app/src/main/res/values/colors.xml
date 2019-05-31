@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#658407</color>
+    <color name="colorPrimaryDark">#396A19</color>
+    <color name="colorAccent">#BDD36C</color>
+
+
+    <color name="grey_90">#263238</color>
+    <color name="light_green_500">#8BC34A</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="divider_color">#dadada</color>
+    <color name="SelectedBg">#70000000</color>
+
+    <color name="green">#00a306</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="light_black">#070707</color>
+    <color name="payment">#2f2f39</color>
+</resources>

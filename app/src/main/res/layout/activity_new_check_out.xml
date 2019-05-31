@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CheckOutActivity"
+        android:orientation="vertical">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/chilli_bnr"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" />
+        <LinearLayout
+            android:id="@+id/SendDetails"
+            android:visibility="visible"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fonts.Font_Roboto_medium
+                android:id="@+id/Shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text=""
+                android:textColor="#333"
+                android:textSize="18sp" />
+            <fonts.Font_Roboto_medium
+                android:textColor="#333"
+                android:layout_margin="4dp"
+                android:textSize="18sp"
+                android:id="@+id/NetAmount"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <fonts.Font_Roboto_medium
+                android:textColor="#333"
+                android:layout_margin="4dp"
+                android:textSize="18sp"
+                android:id="@+id/mQnty"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:hint="Select Payment Type"
+                android:id="@+id/PIN_Code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:focusableInTouchMode="false"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:focusable="true"
+                    android:imeOptions="actionNext"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:hint="Select Date Time"
+                android:id="@+id/SelectDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:focusableInTouchMode="false"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:focusable="true"
+                    android:imeOptions="actionNext"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:hint="Paid Amount"
+                android:id="@+id/paid_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:focusable="true"
+                    android:imeOptions="actionNext"
+                    android:layout_height="wrap_content"
+                    android:editable="false"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:text="Send"
+                android:layout_margin="8sp"
+                android:id="@+id/send"
+                android:textColor="#fafafa"
+                android:background="@drawable/shape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/RemarksLayout"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:hint="Select Shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/SelectShop"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:focusable="true"
+                    android:imeOptions="actionNext"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:hint="Date of Visit Again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/DateofVisitTobe"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:focusable="true"
+                    android:imeOptions="actionNext"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:theme="@style/TextLabel"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:hint="Visite Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/VisiteType"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:focusable="true"
+                    android:imeOptions="actionNext"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textarea"
+                android:padding="@dimen/spacing_large"
+                android:textColorHint="@color/grey_40">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/Remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:hint="Remark"
+                    android:inputType="textMultiLine"
+                    android:maxLines="12"
+                    android:minLines="7"
+                    android:textColor="#333"
+                    android:theme="@style/EditText.Yellow" />
+
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:background="@drawable/shape"
+                android:id="@+id/BtnTarget"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#fafafa"
+                android:text="Create Remainder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
